@@ -65,3 +65,35 @@ h2 {
   cursor: pointer;
   border: none;
 }
+
+.hire-balloon {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #ff3b30;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  font-size: 14px;
+  position: relative;
+  animation: float 2.5s ease-in-out infinite;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* small “string” effect */
+.hire-balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #333;
+  transform: translateX(-50%);
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
