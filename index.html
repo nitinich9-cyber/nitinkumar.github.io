@@ -1,149 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nitin Kumar | Mechanical Design Engineer</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-      background: #f8f9fa;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-      color: white;
-      padding: 60px 20px;
-    }
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .header-text {
-      flex: 1;
-      min-width: 300px;
-    }
-    h1 { 
-      margin: 0; 
-      font-size: 2.8rem; 
-    }
-    .tagline { 
-      font-size: 1.4rem; 
-      margin: 10px 0; 
-    }
-    .photo {
-      flex: 0 0 220px;
-      text-align: center;
-    }
-    .photo img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      border: 6px solid rgba(255,255,255,0.9);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      object-fit: cover;
-    }
-    h2 { 
-      color: #1e3a8a; 
-      border-bottom: 3px solid #3b82f6; 
-      padding-bottom: 10px; 
-    }
-    section { margin: 50px 0; }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .skill-tag {
-      background: #e0f2fe;
-      color: #1e40af;
-      padding: 8px 16px;
-      border-radius: 50px;
-      font-weight: 500;
-    }
-    .job {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #1e3a8a;
-      color: white;
-    }
-    a { color: #3b82f6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="header-text">
-          <h1>Nitin Kumar</h1>
-          <p class="tagline">Mechanical Design & Simulation Engineer</p>
-          <p>Leipzig, Germany | Blue Card EU | Immediately Available</p>
-        </div>
-        <div class="photo">
-          <img src="nitin.jpg" alt="Nitin Kumar">
-        </div>
-      </div>
+<header>
+  <div class="container header-content">
+
+    <div class="header-text">
+      <h1 data-en="Nitin Kumar" data-de="Nitin Kumar">Nitin Kumar</h1>
+
+      <p class="tagline"
+         data-en="Mechanical Design & Simulation Engineer"
+         data-de="Maschinenbau & Simulationsingenieur">
+        Mechanical Design & Simulation Engineer
+      </p>
+
+      <p data-en="Leipzig, Germany | Blue Card EU | Available immediately"
+         data-de="Leipzig, Deutschland | Blaue Karte EU | Sofort verfügbar">
+        Leipzig, Germany | Blue Card EU | Available immediately
+      </p>
+
+      <button onclick="toggleLanguage()" class="btn">
+        🇩🇪 / 🇬🇧 Switch Language
+      </button>
+
+      <a href="cv.pdf" class="btn">Download CV</a>
     </div>
-  </header>
 
-  <div class="container">
-
-    <section>
-      <h2>About Me</h2>
-      <p>Mechanical Design Engineer with over 6 years of experience in 3D modeling, assemblies, and creation of manufacturing & procurement documentation using <strong>Autodesk Inventor</strong>.</p>
-      <p>Proven expertise in translating customer and technical requirements into optimized designs, cross-functional collaboration, and design for manufacturability. Currently based in Leipzig and immediately available.</p>
-    </section>
-
-    <section>
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <span class="skill-tag">Autodesk Inventor (Expert)</span>
-        <span class="skill-tag">3D Modeling & Assemblies</span>
-        <span class="skill-tag">Manufacturing Drawings</span>
-        <span class="skill-tag">GD&T</span>
-        <span class="skill-tag">Technical Documentation</span>
-        <span class="skill-tag">Design for Manufacturability</span>
-        <span class="skill-tag">DFMEA & Root Cause Analysis</span>
-        <span class="skill-tag">Injection Molding & Sheet Metal</span>
-        <span class="skill-tag">CAE Result Integration</span>
-        <span class="skill-tag">Cross-functional Collaboration</span>
-      </div>
-    </section>
-
-    <!-- You can continue with the rest of your sections (Experience, Education, etc.) -->
+    <div class="photo">
+      <img src="nitin.jpg" alt="Nitin Kumar">
+    </div>
 
   </div>
+</header>
 
-  <footer>
-    <p>© 2026 Nitin Kumar • Leipzig, Germany</p>
-  </footer>
+<div class="container">
 
+  <section>
+    <h2 data-en="About Me" data-de="Über mich">About Me</h2>
+
+    <p data-en="Mechanical Design Engineer with 6+ years of experience in 3D modeling, assemblies, and manufacturing documentation using Autodesk Inventor."
+       data-de="Maschinenbauingenieur mit über 6 Jahren Erfahrung in 3D-Konstruktion, Baugruppen und Fertigungsdokumentation mit Autodesk Inventor.">
+      Mechanical Design Engineer with 6+ years of experience...
+    </p>
+
+    <p data-en="Experienced in translating technical requirements into optimized designs and working in cross-functional teams."
+       data-de="Erfahren in der Umsetzung technischer Anforderungen in optimierte Konstruktionen und der Zusammenarbeit in interdisziplinären Teams.">
+      Experienced in translating technical requirements...
+    </p>
+  </section>
+
+  <section>
+    <h2 data-en="Core Skills" data-de="Kernkompetenzen">Core Skills</h2>
+
+    <div class="skills">
+      <span class="skill-tag">Autodesk Inventor</span>
+      <span class="skill-tag">3D CAD</span>
+      <span class="skill-tag">GD&T</span>
+      <span class="skill-tag">DFMEA</span>
+      <span class="skill-tag">Sheet Metal</span>
+      <span class="skill-tag">Injection Molding</span>
+      <span class="skill-tag">CAE Analysis</span>
+      <span class="skill-tag">Technical Documentation</span>
+      <span class="skill-tag">Root Cause Analysis</span>
+      <span class="skill-tag">SAP Integration</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Work Experience" data-de="Berufserfahrung">Work Experience</h2>
+
+    <div class="job">
+      <h3 data-en="Engineer – Mechanical Product Development (TU Chemnitz)"
+          data-de="Ingenieur – Mechanische Produktentwicklung (TU Chemnitz)">
+        Engineer – TU Chemnitz
+      </h3>
+
+      <p data-en="04/2024 – Present"
+         data-de="04/2024 – Heute">04/2024 – Present</p>
+
+      <ul>
+        <li data-en="Developed 3D models and assemblies using Autodesk Inventor"
+            data-de="Entwicklung von 3D-Modellen und Baugruppen mit Autodesk Inventor">
+          Developed 3D models...
+        </li>
+
+        <li data-en="Created manufacturing and test documentation for research systems"
+            data-de="Erstellung von Fertigungs- und Prüfdokumentation für Forschungssysteme">
+          Created manufacturing documentation...
+        </li>
+
+        <li data-en="Integrated sensors and electrical components into mechanical systems"
+            data-de="Integration von Sensorik und elektrischen Komponenten in mechanische Systeme">
+          Integrated sensors...
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <h2 data-en="Education" data-de="Ausbildung">Education</h2>
+
+    <p>
+      <strong>MSc Advanced Manufacturing</strong> – TU Chemnitz (1.6 GPA)
+    </p>
+
+    <p>
+      <strong>Bachelor of Technology – Mechanical Engineering</strong>
+    </p>
+  </section>
+
+  <section>
+    <h2 data-en="Contact" data-de="Kontakt">Contact</h2>
+
+    <p>Email: nitin.ich9@gmail.com</p>
+    <p>Phone: +49 XXXXXXXX</p>
+    <p>LinkedIn: (add link)</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Nitin Kumar</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
